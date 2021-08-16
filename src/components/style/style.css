@@ -1,0 +1,16 @@
+body{
+    margin: 2%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style-type: none;
+}
+
+h2{
+    font-size: 22px;
+}
