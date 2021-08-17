@@ -14,7 +14,7 @@ export const NavBar = () => {
         <hr/>
         <div className="container-fluid">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand" href="#">Navbar</a>
+                <a className="navbar-brand" href="#"><CartWidget/></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -28,7 +28,7 @@ export const NavBar = () => {
                     </ul>
                  </div>
             </nav>
-            <CartWidget/>
+            
         </div>
         </header>
     )
