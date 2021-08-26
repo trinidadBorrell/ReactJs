@@ -5,8 +5,7 @@ export const ItemList = (({productos = []}) =>{
 
     return (
         <section className="container">
-            <h2>PRODUCTOS</h2>
-            <hr/>
+            <br/>
             <div className="row">
                 {productos.map((prod)=>( <Item key={prod.id} item={prod}/>))}
             </div>

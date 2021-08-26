@@ -12,7 +12,7 @@ export const ItemDetail =({ id, nombre, info, img, precio}) => {
             <p>{info}</p>
 
             <Contador/>
-            <Link to={`/productos`} className="btn btn-primary">Atrás</Link>
+            <Link to={`/productos`} className="btn btn-primary">Volver a Productos</Link>
         </div>
     )
 }
