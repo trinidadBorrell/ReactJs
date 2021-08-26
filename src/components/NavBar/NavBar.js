@@ -25,7 +25,7 @@ export const NavBar = () => {
                             <li className="nav-item"><Link className="nav-link" to={'/inicio'}>Inicio</Link></li>
                             <li className="nav-item"><Link className="nav-link" to={'/nosotrxs'}>Sobre Nosotrxs</Link></li>
                         
-                            <div class="dropdown">
+                            <div className="dropdown">
                                 <button className="dropbtn"><Link className="dropLink" to={'/productos'}>Productos</Link></button>
                                 <div className="dropdown-content">
                                     <Link to={'/productos/remeras'}>Remeras</Link>

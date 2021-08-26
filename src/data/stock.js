@@ -34,7 +34,7 @@ export const stock = [
     },
     {
         id: 5,
-        nombre: "Bolso de Tela - Chico",
+        nombre: "Bolso de Tela - Chica",
         precio: 1000,
         info: "Bolso ecofriendly chico hecho con material orgánico",
         img: "",
@@ -90,7 +90,7 @@ export const stock = [
     },
     {
         id: 12,
-        nombre: "Bolso de Tela - Mediano",
+        nombre: "Bolso de Tela - Mediana",
         precio: 1500,
         info: "Bolso ecofriendly mediano hecho con material orgánico",
         img: "",

@@ -4,7 +4,7 @@ import {Item} from './Item'
 export const ItemList = (({productos = []}) =>{
 
     return (
-        <section className="container my-5">
+        <section className="container">
             <h2>PRODUCTOS</h2>
             <hr/>
             <div className="row">
@@ -13,4 +13,4 @@ export const ItemList = (({productos = []}) =>{
         </section>
     )
 
-})
+})                         

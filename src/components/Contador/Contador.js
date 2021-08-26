@@ -4,7 +4,7 @@ export const Contador = () =>{
 
     return(
         <div>
-            
+            <button >Contador</button>
         </div>
     )
 }
