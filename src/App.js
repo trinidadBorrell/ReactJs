@@ -5,11 +5,17 @@ import './style/style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
 import {ItemListContainer} from './components/ItemListContainer/ItemListContainer';
-
+import {Cart} from './components/Cart/Cart'
+import {CartProvider} from './context/CartContext'
+import { useState } from 'react';
 
 function App() {
+
+ 
+
   return (
     <>
+    <CartProvider>
       <BrowserRouter>
 
         <NavBar/>
@@ -33,9 +39,9 @@ function App() {
               <p>Proximamente...</p>
           </Route>
 
-          <Route exact path="/nosotrxs">
-              <h1>SOBRE NOSOTRXS</h1>
-              <p>Proximamente...</p>
+          <Route exact path="/cart">
+              <h1>Carrito</h1>
+              <Cart/>
           </Route>
 
           <Route exact path="*">
@@ -45,7 +51,8 @@ function App() {
         </Switch>
       
       </BrowserRouter>
-      
+
+    </CartProvider>  
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { CartWidget } from './CartWidget'
+import { CartWidget } from '../CartWidget/CartWidget'
 import {Link} from 'react-router-dom'
 import './NavBar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,7 +15,6 @@ export const NavBar = () => {
         <hr/>
             <div className="container-fluid">
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                    <a className="navbar-brand"><CartWidget/></a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -23,7 +22,7 @@ export const NavBar = () => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item"><Link className="nav-link" to={'/inicio'}>Inicio</Link></li>
-                            <li className="nav-item"><Link className="nav-link" to={'/nosotrxs'}>Sobre Nosotrxs</Link></li>
+                            <li className="nav-item"><Link className="nav-link" to={'/cart'}>Carrito</Link></li>
                         
                             <div className="dropdown">
                                 <button className="dropbtn"><Link className="dropLink" to={'/productos'}>Productos</Link></button>
@@ -35,6 +34,9 @@ export const NavBar = () => {
                             </div>
                         </ul>
                     </div>
+
+                    <a className="navbar-brand"><CartWidget/></a>
+
                 </nav>
             
             </div>

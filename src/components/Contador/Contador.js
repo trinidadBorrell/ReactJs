@@ -1,24 +1,29 @@
 import React, {useEffect, useState} from 'react'
 
-export const Contador = () =>{
+export const Contador = ({max, count, setCount, agregarCarrito}) =>{
 
-    const [count, setCount] = useState(0);
 
-    const incrementar = () => setCount(count + 1); 
-    const restar = () => {
-        if (count ==0){
-            setCount(0);
+    const incrementar = () => {
+        if (count < max){
+            setCount(count + 1);
         }
-        else{
+    }
+    
+    const restar = () => {
+        if (count > 0){
             setCount(count -1 );
-        } }; 
+        } 
+    }; 
 
 
     return(
         <div>
-            <button onClick={incrementar} className="m-1">Añadir Unidad</button>
-            <button onClick={restar}>Restar Unidad</button>
+            <button onClick={incrementar} className=" btn btn-primary m-1">+</button>
             <p>Cantidad de Elementos: {count}</p>
+            <button onClick={restar} className="btn btn-primary">-</button>
+            <br/>
+            <br/>
+            <button className="btn btn-primary m-1" onClick={agregarCarrito} >Agregar al Carrito</button>
         </div>
     )
 }

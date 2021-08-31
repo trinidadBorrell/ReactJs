@@ -6,7 +6,8 @@ export const stock = [
         precio: 2000,
         info: "Remera manga corta con estampa minimalista hecha con tela reciclada",
         img: "",
-        categoria: "remeras"
+        categoria: "remeras",
+        stock: 10
     },
     {
         id: 2,
@@ -14,7 +15,8 @@ export const stock = [
         precio: 4500,
         info: "Pantalón simple de tipo palazzo",
         img: "",
-        categoria: "pantalones"
+        categoria: "pantalones",
+        stock: 10
     },
     {
         id: 3,
@@ -22,7 +24,8 @@ export const stock = [
         precio: 3000,
         info: "Remera gris fina de algodón reciclado",
         img: "",
-        categoria: "remeras"
+        categoria: "remeras",
+        stock: 10
     },
     {
         id: 4,
@@ -30,7 +33,8 @@ export const stock = [
         precio: 1000,
         info: "Piluso talle único hecho con descarte textil",
         img: "",
-        categoria: "accesorios"
+        categoria: "accesorios",
+        stock: 10
     },
     {
         id: 5,
@@ -38,7 +42,8 @@ export const stock = [
         precio: 1000,
         info: "Bolso ecofriendly chico hecho con material orgánico",
         img: "",
-        categoria: "accesorios"
+        categoria: "accesorios",
+        stock: 10
     },
     {
         id: 6,
@@ -46,7 +51,8 @@ export const stock = [
         precio: 2000,
         info: "Bufanda simple hecha con poliéster reciclado de botellas de plástico",
         img: "",
-        categoria: "accesorios"
+        categoria: "accesorios",
+        stock: 10
     },
     {
         id: 7,
@@ -54,7 +60,8 @@ export const stock = [
         precio: 2000,
         info: "Calsa rayada con algodón reciclado",
         img: "",
-        categoria: "pantalones"
+        categoria: "pantalones",
+        stock: 10
     },
     {
         id: 8,
@@ -62,7 +69,8 @@ export const stock = [
         precio: 4500,
         info: "Pantalón simple chupín",
         img: "",
-        categoria: "pantalones"
+        categoria: "pantalones",
+        stock: 10
     },
     {
         id: 9,
@@ -70,7 +78,8 @@ export const stock = [
         precio: 3000,
         info: "Polera gris fina hecha con poliéster reciclado de botellas de plástico",
         img: "",
-        categoria: "remeras"
+        categoria: "remeras",
+        stock: 10
     },
     {
         id: 10,
@@ -78,7 +87,8 @@ export const stock = [
         precio: 1000,
         info: "Piluso talle único hecho con descarte textil",
         img: "",
-        categoria: "accesorios"
+        categoria: "accesorios",
+        stock: 10
     },
     {
         id: 11,
@@ -86,7 +96,8 @@ export const stock = [
         precio: 1500,
         info: "Bufanda simple hecha con poliéster reciclado de botellas de plástico",
         img: "",
-        categoria: "accesorios"
+        categoria: "accesorios",
+        stock: 10
     },
     {
         id: 12,
@@ -94,6 +105,7 @@ export const stock = [
         precio: 1500,
         info: "Bolso ecofriendly mediano hecho con material orgánico",
         img: "",
-        categoria: "accesorios"
+        categoria: "accesorios",
+        stock: 10
     }
 ]
