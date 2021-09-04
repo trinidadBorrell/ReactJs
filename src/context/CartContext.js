@@ -4,68 +4,42 @@ import { Cart } from '../components/Cart/Cart';
 
 export const CartContext = createContext()
 
-
-/**
- * 
- *{carrito.forEach(element => {
-            if (carrito[element].id !== prod.id) || (carrito == "") {
-                setCarrito([
-                    ...carrito,
-                    prod
-                  ])
-            }
-            else if(carrito[element].id === prod.id){
-                carrito.filter(prod => prod.id !== carrito[element].id)
-                setCarrito([
-                    ...carrito,
-                    prod
-                  ])
-            }}  
- */
 export const CartProvider = ({children}) => {
 
     const [carrito, setCarrito] = useState([])
+    const [cartCount, setCartCount] = useState(0)
 
-    const agregarCarrito = (prod) => {
+    const agregarCarrito = (item) => {
 
-      if (carrito == ''){
-        setCarrito([
-          ...carrito,
-          prod
-        ]);
-      }
-      else {
-        carrito.forEach(element => {
-          if (element.id !== prod.id) {
-              setCarrito([
-                  ...carrito,
-                  prod
-                ]);
+        if (carrito.some(product => product.id === item.id)){
+          const copy = carrito
+          const repeateditem = carrito.findIndex(product => product.id === item.id)
+          copy[repeateditem] = {
+            ...copy[repeateditem],
+            count: copy[repeateditem].count + cartCount
           }
-          else if(element.id === prod.id){
-              /*setCarrito([
-                  ...carrito,
-                  element.count += prod.count
-                ]);
-              }}*/
-            }})}}
+          setCarrito(copy)
+          setCartCount(copy[repeateditem].count)
+        }
+        else{
+          setCarrito([...carrito, {...item}]);
+          setCartCount(prev => prev + item.count)
+        }
+      }
   
 
-        
-    const eliminarCarrito = (id) => {
+    const eliminarCarrito = (id, count) => {
       setCarrito( carrito.filter(prod => prod.id !== id))
-    }
-    
-    const cantidadCarrito = () => {
-      return carrito.reduce((acc, prod) => acc + prod.count, 0)
+      setCartCount(prev => prev - count)
     }
   
     const vaciarCarrito = () => {
       setCarrito([])
+      setCartCount(0)
     }
 
     return (
-        <CartContext.Provider value={{carrito, agregarCarrito, eliminarCarrito, cantidadCarrito, vaciarCarrito}}>
+        <CartContext.Provider value={{carrito, cartCount, agregarCarrito, eliminarCarrito, vaciarCarrito}}>
 
             {children}
 

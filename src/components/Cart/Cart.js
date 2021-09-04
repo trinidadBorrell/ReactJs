@@ -13,7 +13,7 @@ export const Cart = () => {
                     <h3>{prod.nombre}</h3>
                     <p>Cantidad: {prod.count}</p>
                     <p>Precio: ${prod.precio * prod.count}</p>
-                    <button className="btn btn-danger" onClick={()=> eliminarCarrito(prod.id)}>ELIMINAR ELEMENTO</button>
+                    <button className="btn btn-danger" onClick={()=> eliminarCarrito(prod.id, prod.count)}>ELIMINAR ELEMENTO</button>
                 </div>
             ))}
 
