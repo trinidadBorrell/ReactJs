@@ -5,14 +5,19 @@ import'../NavBar/NavBar.css'
 import {Link} from 'react-router-dom'
 
 export const CartWidget = () => {
-    const {cartCount} = useContext(CartContext) 
-    return(
+    const {cartCount} = useContext(CartContext)
+
+    if(cartCount==0){
+        return(
+            <> 
+            </>
+        )
+    }else{
+        return(
             <Link to="/cart">
                 <div>   
                     <IoCartOutline className="cartWidget"/>
                     <span>{cartCount}</span>
                 </div> 
-            </Link>
-      
-    )
-}
+            </Link>)
+    }}

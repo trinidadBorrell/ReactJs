@@ -17,9 +17,9 @@ export const Cart = () => {
                 </div>
             ))}
 
-            <hr/>
-
+            <hr/> 
             <button className="btn btn-danger" onClick={vaciarCarrito}>VACIAR CARRITO</button>
+
         </div>
     )
 }
