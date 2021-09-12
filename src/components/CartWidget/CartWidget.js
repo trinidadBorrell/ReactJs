@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 export const CartWidget = () => {
     const {cartCount} = useContext(CartContext)
 
-    if(cartCount==0){
+    if(cartCount===0){
         return(
             <> 
             </>

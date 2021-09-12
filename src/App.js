@@ -1,4 +1,3 @@
-//import './App.css';
 import {NavBar} from './components/NavBar/NavBar'
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 import './style/style.css'
@@ -7,11 +6,9 @@ import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetail
 import {ItemListContainer} from './components/ItemListContainer/ItemListContainer';
 import {Cart} from './components/Cart/Cart'
 import {CartProvider} from './context/CartContext'
-import { useState } from 'react';
-
+import { Checkout } from './components/Checkout/Checkout';
 function App() {
 
- 
 
   return (
     <>
@@ -42,6 +39,10 @@ function App() {
           <Route exact path="/cart">
               <h1>Carrito</h1>
               <Cart/>
+          </Route>
+
+          <Route exact path="/checkout">
+            <Checkout/>
           </Route>
 
           <Route exact path="*">
