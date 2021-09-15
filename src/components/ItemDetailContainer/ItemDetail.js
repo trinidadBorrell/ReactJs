@@ -3,15 +3,14 @@ import {Link} from 'react-router-dom'
 import {Contador} from '../Contador/Contador'
 import {CartContext} from '../../context/CartContext'
 
-export const ItemDetail =({ id, nombre, info, img, categoria, precio, stock}) => {
+export const ItemDetail =({ id, nombre, info, img, category, precio, stock}) => {
 
     const {agregarCarrito} = useContext(CartContext)
-
     const [count, setCount] = useState(0);
 
     const agregarC = () =>{
         agregarCarrito({
-            id, nombre, info, img, categoria, precio, stock, count
+            id, nombre, info, img, category, precio, stock, count
         })
     }
 

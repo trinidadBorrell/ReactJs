@@ -9,7 +9,7 @@ export const Item = ({item}) => {
             <img src={item.img} alt={item.nombre} />
             <p>{item.info}</p>
             <p>${item.precio}</p>
-            <Link to={`/productos/${item.categoria}/${item.id}`} className="btn btn-outline-primary">Detalle del producto</Link>
+            <Link to={`/productos/${item.category}/${item.id}`} className="btn btn-outline-primary">Detalle del producto</Link>
         </div>
     )
 }

@@ -37,24 +37,7 @@ export const ItemListContainer = () => {
                 setLoading(false)
             })
         }
-        /*
-        setLoading(true)
-
-        pedirDatos()
-            .then(res =>{
-
-                if (categoria){
-                    const arrayFiltrado = res.filter(prod => prod.categoria === categoria)
-                    setData(arrayFiltrado)
-                }
-                else {
-                    setData(res)
-                }
-            } )
-            .catch(err => console.log(err))
-            .finally(()=>{
-                setLoading(false)
-            })*/
+                
     }, [categoria])
 
     return (

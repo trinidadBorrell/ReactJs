@@ -21,8 +21,8 @@ export const Cart = () => {
             <hr/> 
             <button className="btn btn-danger" onClick={vaciarCarrito}>VACIAR CARRITO</button>
             <Link to="/checkout">
-                <button className="btn btn-success nx-3">
-                    Terminar mi compra
+                <button className="btn btn-success nx-3 m-2">
+                    TERMINAR COMPRA
                 </button>
             </Link>
 

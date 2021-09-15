@@ -19,7 +19,6 @@ export const ItemDetailContainer = () => {
 
         item.get()
             .then((doc) => {
-            console.log(doc.data())
             setItem({...doc.data(), id: doc.id})
             })
             .finally(()=> {setLoading(false)})
